@@ -3,9 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Home</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/home.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <script src="https://cdnjs.﻿cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>﻿
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
   </head>
   <body>
-    <<h1>Home Page Template is working</h1>
-    
+    <div class="main">
+        <h1 class="title">Over 20% of diabetic people in the world are unaware they have it.</h1>
+        <button class="button">Get Tested</button>
+    <script src="{{url_for('static', filename='app.js')}}"></script>
   </body>
 </html>

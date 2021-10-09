@@ -6,5 +6,80 @@
   </head>
   <body>
     <h1>Survey Page Template is working!</h1>
+    <div>
+      <form action="results" method="post">
+        {{ form.hidden_tag() }}
+        <fieldset>
+          <legend>Fill out the survey</legend>
+          <div>
+            {{ form.age.label() }}
+            {{ form.age() }}
+          </div>
+          <div>
+            {{ form.gender.label() }}
+            {{ form.gender() }}
+          </div>
+          <div>
+            {{ form.incUrination.label() }}
+            {{ form.incUrination() }}
+          </div>
+          <div>
+            {{ form.weightLoss.label() }}
+            {{ form.weightLoss() }}
+          </div>
+          <div>
+            {{ form.limbWeakness.label() }}
+            {{ form.limbWeakness() }}
+          </div>
+          <div>
+            {{ form.incHunger.label() }}
+            {{ form.incHunger() }}
+          </div>
+          <div>
+            {{ form.weightLoss.label() }}
+            {{ form.weightLoss() }}
+          </div>
+          <div>
+            {{ form.genitalThrush.label() }}
+            {{ form.genitalThrush() }}
+          </div>
+          <div>
+            {{ form.blurryVision.label() }}
+            {{ form.blurryVision() }}
+          </div>
+          <div>
+            {{ form.itching.label() }}
+            {{ form.itching() }}
+          </div>
+          <div>
+            {{ form.irritability.label() }}
+            {{ form.irritability() }}
+          </div>
+          <div>
+            {{ form.woundOrInfections.label() }}
+            {{ form.woundOrInfections() }}
+          </div>
+          <div>
+            {{ form.muscleParalysis.label() }}
+            {{ form.muscleParalysis() }}
+          </div>
+          <div>
+            {{ form.muscleStiffness.label() }}
+            {{ form.muscleStiffness() }}
+          </div>
+          <div>
+            {{ form.hairLoss.label() }}
+            {{ form.hairLoss() }}
+          </div>
+          <div>
+            {{ form.obese.label() }}
+            {{ form.obese() }}
+          </div>
+          <div>
+            {{ form.submit() }}
+          </div>
+        </fieldset>
+      </form>
+    </div>
   </body>
 </html>

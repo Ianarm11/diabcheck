@@ -40,7 +40,13 @@ def results():
     x = (sum_of_products/sum_of_weights)
     raw_prediction = LogisticFunction(x, k, x0)
     diabetes_predication = round(raw_prediction)
-    return render_template('results.html', results=diabetes_predication)
+    if(diabetes_predication == 0):
+        return render_template('good_results.html', results=diabetes_predication)
+    elif(diabetes_predication == 1):
+        return render_template('bad_results.html', results=diabetes_predication)
+    else:
+        return render_template('survey.html')
+
 
 def GetCleanList(x):
     clean_list = []

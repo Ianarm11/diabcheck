@@ -1,11 +1,6 @@
 body{
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(
-    to bottom,
-    rgba(0,0,0, 0),
-    rgba(0,0,0, 100)
-  ),url(https://images.pexels.com/photos/305810/pexels-photo-305810.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
   background-repeat: no-repeat;
   height: 100vh;
   background-size: cover;
@@ -22,8 +17,8 @@ body{
   font-weight: 900;
 }
 
-.title{
-  color: #ffffff;
+.title-1{
+  color:white;
 }
 
 * {
@@ -43,9 +38,9 @@ body{
 .button{
   position: relative;
   width: 180px;
-  height: 60px;
+  height: 120px;
   margin: 20px;
-  line-height: 60px;
+  line-height: 45px;
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
@@ -71,7 +66,6 @@ body{
   margin-right: auto;
   font-size: 18px;
   font-weight: 900;
-  color:#ffff00;
   padding: 10px;
 }
 
@@ -83,4 +77,22 @@ body{
   font-weight: 900;
   color:#ffff00;
   padding: 20px;
+}
+
+.db-button{
+  margin-bottom: 20px;
+}
+
+.body-1{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0, 0),
+    rgba(0,0,0, 100)
+),url(https://images.pexels.com/photos/305810/pexels-photo-305810.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  /* overflow: hidden; */
 }

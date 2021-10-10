@@ -16,9 +16,6 @@ body{
   font-weight: 900;
 }
 
-.title-1{
-  color:black;
-}
 
 * {
   margin: 0;
@@ -27,26 +24,26 @@ body{
   font-family: "Poppins", sans-serif;
 }
 
-.header{
-  /* height: 100vh; */
+.title-1{
+  color:#ffffff;
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 900;
 }
 
 .button{
   position: relative;
-  width: 180px;
-  height: 120px;
+  width: 380px;
+  height: 100px;
   margin: 20px;
-  line-height: 45px;
+  line-height: 0px;
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   color: white;
   background-color: transparent;
-  border: 1px solid red;
+  border: 1px solid #FF0000;
   cursor: pointer;
   -webkit-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
@@ -55,7 +52,7 @@ body{
 .button:hover{
   border: none;
   color:#000;
-  background: red;
+  background:#FF0000;
 }
 
 .input{
@@ -88,10 +85,18 @@ body{
   background: linear-gradient(
     to bottom,
     rgba(0,0,0, 0),
-    rgba(0,0,0, 0)
+    rgba(0,0,0, 1)
 ),url(https://images.unsplash.com/photo-1495653797063-114787b77b23?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
   background-repeat: no-repeat;
-  height: 120vh;
+  height: 100vh;
   background-size: cover;
-  /* overflow: hidden; */
+  overflow: hidden;
+}
+
+.text-left{
+  margin-top: 20px;
+}
+
+.members{
+  margin-top: 20px;
 }

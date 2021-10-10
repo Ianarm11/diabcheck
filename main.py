@@ -25,6 +25,10 @@ def survey():
     form = DiabetesForm()
     return render_template('survey.html', form=form)
 
+@app.route("/about")
+def about():
+    return render_template('about.html')
+
 #Results Page
 @app.route("/results", methods=["POST"])
 def results():

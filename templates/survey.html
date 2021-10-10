@@ -19,140 +19,142 @@
     </div>
     <div class="cover-background">
       <form action="results" method="post">
-          <div class="form-group">
-            <div class="input col-4">
-              {{ form.age.label() }}
-            </div>
-            <div class="input col-4">
-              {{ form.age() }}
-            </div>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="Age">{{ form.age.label() }}</label>
+            <input type="number" class="form-control" name="age" required>
           </div>
-          <div class="form-group">
-            <div class="input col-4">
-              {{ form.gender.label() }}
-            </div>
-            <div class="input col-4">
-              {{ form.gender() }}
-            </div>
+        </div>
+
+        <datalist id="data">
+          <option value="Yes" />
+          <option value="No" />
+        </datalist>
+
+        <!-- 2 -->
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="Gender">{{ form.gender.label() }}</label>
+            <input class="form-control" name="gender" list="gender" required>
+              <datalist id="gender">
+                <option value="Male" />
+                <option value="Female" />
+                <option value="Other" />
+              </datalist>
           </div>
-          <div class="form-group">
-            <div class="input col-4">
-              {{ form.incUrination.label() }}
-            </div>
-            <div class="input col-4">
-              {{ form.incUrination() }}
-            </div>
+        </div>
+        <!-- 3 -->
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="Urination">{{ form.incUrination.label() }}</label>
+            <input class="form-control" name="urination" list="data" required>
           </div>
-          <div class="form-group">
-            <div class="input col-4">
-              {{ form.incThirst.label() }}
-            </div>
-            <div class="input col-4">
-              {{ form.incThirst() }}
-            </div>
+        </div>
+        <!-- 4 -->
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="Thirst">{{ form.incThirst.label() }}</label>
+            <input class="form-control" name="thirst"  list="data" required>
           </div>
-          <div class="form-group">
-            <div class="input col-4">
-              {{ form.weightLoss.label() }}
-            </div>
-            <div class="input col-4">
-              {{ form.weightLoss() }}
-            </div>
+        </div>
+        <!-- 5 -->
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="WeightLoss">{{ form.weightLoss.label() }}</label>
+            <input class="form-control" name="weightloss" list="data" required>
           </div>
-          <div class="form-group">
-            <div class="input col-4">
-              {{ form.limbWeakness.label() }}
-            </div>
-            <div class="input col-4">
-              {{ form.limbWeakness() }}
-            </div>
+        </div>
+        <!-- 6 -->
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="WeightLoss">{{ form.weightLoss.label() }}</label>
+            <input class="form-control" name="weightloss" list="data" required>
           </div>
-          <div class="form-group">
-            <div class="input col-4">
-              {{ form.incHunger.label() }}
-            </div>
-            <div class="input col-4">
-              {{ form.incHunger() }}
-            </div>
+        </div>
+        <!-- 7 -->
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="LimbWeakness">{{ form.limbWeakness.label() }}</label>
+            <input class="form-control" name="limbweakness" list="data" required>
           </div>
-          <div class="form-group">
-            <div class="input col-4">
-              {{ form.genitalThrush.label() }}
-            </div>
-            <div class="input col-4">
-              {{ form.genitalThrush() }}
-            </div>
+        </div>
+        <!-- 8 -->
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="IncreasedHunger">{{ form.incHunger.label() }}</label>
+            <input class="form-control" name="increasedhunger" list="data" required>
           </div>
-          <div class="form-group">
-            <div class="input col-4">
-              {{ form.blurryVision.label() }}
-            </div>
-            <div class="input col-4">
-              {{ form.blurryVision() }}
-            </div>
+        </div>
+        <!-- 9 -->
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="GenitalThrush">{{ form.genitalThrush.label() }}</label>
+            <input class="form-control" name="genitalthrush" list="data" required>
           </div>
-          <div class="form-group">
-            <div class="input col-4">
-              {{ form.itching.label() }}
-            </div>
-            <div class="input col-4">
-              {{ form.itching() }}
-            </div>
+        </div>
+        <!-- 10 -->
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="BlurryVision">{{ form.blurryVision.label() }}</label>
+            <input class="form-control" name="blurryvision" list="data" required>
           </div>
-          <div class="form-group">
-            <div class="input col-4">
-              {{ form.irritability.label() }}
-            </div>
-            <div class="input col-4">
-              {{ form.irritability() }}
-            </div>
+        </div>
+        <!-- 11 -->
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="Itching">{{ form.itching.label() }}</label>
+            <input class="form-control" name="itching" list="data" required>
           </div>
-          <div class="form-group">
-            <div class="input col-4">
-              {{ form.woundOrInfections.label() }}
-            </div>
-            <div class="input col-4">
-              {{ form.woundOrInfections() }}
-            </div>
+        </div>
+        <!-- 12 -->
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="Itching">{{ form.irritability.label() }}</label>
+            <input class="form-control" name="itching" list="data" required>
           </div>
-          <div class="form-group">
-            <div class="input col-4">
-              {{ form.muscleParalysis.label() }}
-            </div>
-            <div class="input col-4">
-              {{ form.muscleParalysis() }}
-            </div>
+        </div>
+        <!-- 13 -->
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="MustleWoundorInfection">{{ form.woundOrInfections.label() }}</label>
+            <input class="form-control" name="infection" list="data" required>
           </div>
-          <div class="form-group">
-            <div class="input col-4">
-              {{ form.muscleStiffness.label() }}
-            </div>
-            <div class="input col-4">
-              {{ form.muscleStiffness() }}
-            </div>
+        </div>
+        <!-- 14 -->
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="MuscleParalysis">{{ form.muscleParalysis.label() }}</label>
+            <input class="form-control" name="paralysis" list="data" required>
           </div>
-          <div class="form-group">
-            <div class="input col-4">
-              {{ form.hairLoss.label() }}
-            </div>
-            <div class="input col-4">
-              {{ form.hairLoss() }}
-            </div>
+        </div>
+        <!-- 15 -->
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="MuscleStiffness">{{ form.muscleStiffness.label() }}</label>
+            <input class="form-control" name="stiffness" list="data" required>
           </div>
-          <div class="form-group">
-            <div class="input col-4">
-              {{ form.obese.label() }}
-            </div>
-            <div class="input col-4">
-              {{ form.obese() }}
-            </div>
+        </div>
+        <!-- 16 -->
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="HairLoss">{{ form.hairLoss.label() }}</label>
+            <input class="form-control" name="hairloss" list="data" required>
           </div>
-          <div class="form-group">
-            <div class="input-button col-12">
-              {{ form.submit() }}
-            </div>
+        </div>
+        <!-- 17 -->
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="obesity">{{ form.obese.label() }}</label>
+            <input class="form-control" name="obesity" list="data" required>
           </div>
-        </form>
-      </div>
+        </div>
+        <button type="Submit" class="btn btn-primary">Submit</button>
+        <!-- <div class="form-group">
+          <div class="input-button col-12">
+            {{ form.submit() }}
+          </div>
+        </div> -->
+      </form>
+    </div>
   </body>
 </html>

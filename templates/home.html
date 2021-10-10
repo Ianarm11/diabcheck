@@ -7,14 +7,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <script src="https://cdnjs.﻿cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>﻿
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
   </head>
   <body>
-    <div class="main">
-        <h1 class="title">Over 20% of diabetic people in the world are unaware they have it.</h1>
-        <a href=/survey><button class="button">Get Tested</button></a>
-    <script src="{{url_for('static', filename='app.js')}}"></script>
+    <div class="body-1">
+      <div>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+          <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/home">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/survey">Survey</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Links</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+        </nav>
+      </div>
+      <div class="main">
+          <h1 class="title-1">Over 20% of diabetic people in the world are unaware they have it.</h1>
+          <a href=/survey><button class="button">Get Tested</button></a>
+          <script src="{{url_for('static', filename='app.js')}}"></script>
+      </div>
+    </div>
   </body>
 </html>

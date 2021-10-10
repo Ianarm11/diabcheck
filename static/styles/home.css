@@ -45,8 +45,7 @@ body{
   background-color: transparent;
   border: 1px solid #FF0000;
   cursor: pointer;
-  -webkit-transition: background 0.2s ease-in-out;
-  transition: background 0.2s ease-in-out;
+  transition: background 0.3s ease-in-out;
 }
 
 .button:hover, button:focus{
@@ -109,4 +108,12 @@ body{
 
 .members{
   margin-top: 20px;
+}
+
+.background-alt-pages{
+  background-image: url("https://www.transparenttextures.com/patterns/diagonales-decalees.png");
+}
+
+.about-us-page{
+  height: 100vh;
 }

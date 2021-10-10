@@ -49,7 +49,8 @@ body{
   transition: background 0.2s ease-in-out;
 }
 
-.button:hover{
+.button:hover, button:focus{
+  outline: none;
   border: none;
   color:#000;
   background:#FF0000;
@@ -91,6 +92,15 @@ body{
   height: 100vh;
   background-size: cover;
   overflow: hidden;
+}
+
+.navbar{
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.nav-item{
+  font-size: 20px;
+  margin:5px;
 }
 
 .text-left{

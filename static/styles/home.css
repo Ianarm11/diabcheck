@@ -9,7 +9,7 @@ body{
   background-repeat: no-repeat;
   height: 100vh;
   background-size: cover;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .main{
   display: flex;
@@ -33,7 +33,14 @@ body{
   font-family: "Poppins", sans-serif;
 }
 
-.button {
+.header{
+  /* height: 100vh; */
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.button{
   position: relative;
   width: 180px;
   height: 60px;
@@ -55,5 +62,26 @@ body{
   border: none;
   color:#000;
   background: red;
-  }
+}
+
+.input{
+  position: relative;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  font-weight: 900;
+  color:#ffff00;
+  padding: 10px;
+}
+
+.input-button{
+  position: relative;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  font-weight: 900;
+  color:#ffff00;
+  padding: 10px;
 }

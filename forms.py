@@ -3,8 +3,8 @@ from wtforms import StringField, IntegerField, SelectField, SubmitField
 from wtforms.validators import DataRequired, Length
 
 class DiabetesForm(FlaskForm):
-    age = IntegerField('What is your age?', validators=[DataRequired(), Length(min=18, max=100)])
-    gender = SelectField(u'What is your gender', choices=[('m','Male'),('f','Female'),('o','Other')])
+    age = IntegerField('What is your age?', validators=[DataRequired(), Length(min=0, max=100)])
+    gender = SelectField(u'What is your gender?', choices=[(1,'Male'),(0,'Female'),(0.5,'Other')])
     incUrination = SelectField(u'Have you experienced increased urniation?', choices=[(1,'Yes'),(0,'No')])
     incThirst = SelectField(u'Have you experienced increased thirst?', choices=[(1,'Yes'),(0,'No')])
     weightLoss = SelectField(u'Have you had any sudden weight loss?', choices=[(1,'Yes'),(0,'No')])

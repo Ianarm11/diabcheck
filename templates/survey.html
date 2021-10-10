@@ -7,11 +7,15 @@
   <body>
     <h1>Survey Page Template is working!</h1>
     <div>
+      <!-- <form action="results" method="post">
+        <div>
+          <input type="text" name="age">
+        </div>
+        <button type="submit" name="button">submit</button>
+      </form> -->
       <form action="results" method="post">
         {{ form.hidden_tag() }}
-        <fieldset>
-          <legend>Fill out the survey</legend>
-          <div>
+        <div>
             {{ form.age.label() }}
             {{ form.age() }}
           </div>
@@ -24,6 +28,10 @@
             {{ form.incUrination() }}
           </div>
           <div>
+            {{ form.incThirst.label() }}
+            {{ form.incThirst() }}
+          </div>
+          <div>
             {{ form.weightLoss.label() }}
             {{ form.weightLoss() }}
           </div>
@@ -34,10 +42,6 @@
           <div>
             {{ form.incHunger.label() }}
             {{ form.incHunger() }}
-          </div>
-          <div>
-            {{ form.weightLoss.label() }}
-            {{ form.weightLoss() }}
           </div>
           <div>
             {{ form.genitalThrush.label() }}
@@ -78,7 +82,6 @@
           <div>
             {{ form.submit() }}
           </div>
-        </fieldset>
       </form>
     </div>
   </body>

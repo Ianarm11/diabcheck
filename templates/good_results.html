@@ -4,16 +4,34 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/badresults.css') }}">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/goodresults.css') }}">
   </head>
   <body>
+    <div class="goodresults">
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="nav-link" href="/home">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link">Result</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+      </nav>
     <div class="container">
     {{test}}
-    <div class="text-left">
-      <h1>Our algorithm suggests that you do not have diabetes.</h1>
-      <p>Please continue to monitor your health and be aware of symptoms on this survey. If you develop any of these
+    <div class="algo-result">
+    <i class="far fa-shield-check safe-icon"></i>
+      <h1 class="algo-result-title">Our algorithm suggests that you do not have diabetes.</h1>
+      <p class="algo-result-body">Please continue to monitor your health and be aware of symptoms on this survey. If you develop any of these
         symptoms in the future, please re-take the test, and contact your doctor to discuss the results.</h2>
     </div>
+  </div>
   </div>
   </body>
 </html>

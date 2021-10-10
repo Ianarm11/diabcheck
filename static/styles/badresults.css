@@ -1,0 +1,45 @@
+.badresults{
+  background-image: url("https://www.transparenttextures.com/patterns/double-lined.png");
+}
+
+.navbar{
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.nav-item{
+  font-size: 20px;
+  margin:5px;
+  cursor: pointer;
+}
+
+.danger-icon{
+  color: red;
+  margin-bottom: 20px;
+  font-size: 100px;
+}
+
+.algo-result{
+  margin-top: 25px;
+  text-align: center;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.algo-result-title{
+  font-size: 40px;
+}
+
+.algo-result-body{
+  margin-top: 15px;
+  color:	#606060;
+  font-size: 18px;
+}
+
+.algo-result-footer{
+  margin-top: auto;
+}
+
+.algo-result-footer-items{
+    font-size: 15px;
+}

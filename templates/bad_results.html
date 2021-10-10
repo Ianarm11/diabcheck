@@ -3,11 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/badresults.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
   </head>
   <body>
-    <h1>Our algorithm suggests that you do have diabetes.</h1>
-    <p>
-      {{ results }}
-    </p>
+    <div class="container">
+      <h2>The diabetes prediction algorithm indicates you may be at risk for diabetes.</h2>
+      <h5>Please schedule an appointment with your your healthcare practitioner to be further evaluated using laboratory testing.</h5>
+      <br>
+      <h3>To learn more about diabetes mellitus, please see the following links:</h3>
+        <h5><a href="https://www.cdc.gov/diabetes/library/socialmedia/infographics.html">Diabetes Infographics | CDC:</a></h5>
+        <h5><a href="https://www.who.int/health-topics/diabetes#tab=tab_1">Diabetes | World Health Organization:</a></h5>
+        <h5><a href="https://www.cdc.gov/diabetes/basics/index.html">Diabetes Basics | CDC:</a></h5>
+      <br>
+      <h3>More than 122 million Americans are living with diabetes (34.2 million) or prediabetes (88 million). This means that if you suffer
+      from diabetes, you're not at all alone.</h3>
+        <h4><a href="https://www.diabetes.org/resources">Resources for Patients | American Diabetes Association</a></h4>
+  </div>
   </body>
 </html>

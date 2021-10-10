@@ -90,8 +90,8 @@ def LogisticFunction(x, k, x0):
     return raw_prediction
 
 def FindSumOfProducts(final_layer):
+    summed_products = 0
     for i in range(0, len(final_layer)):
-        summed_products = 0
         patient_val = final_layer[i]
         weight_val = chromosome_weights[i]
         product_of_values = patient_val * weight_val
